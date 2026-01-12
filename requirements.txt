@@ -1,0 +1,19 @@
+# Azure Functions Requirements
+# Do not include azure-functions-worker in this file
+# The Python Worker is managed by the Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions>=1.18.0
+
+# MCP Server Dependencies  
+fastmcp>=0.9.0
+pydantic>=2.5.0
+mcp>=1.12.3
+
+# SQL Server Dependencies (with explicit version for Python 3.13 compatibility)
+pyodbc>=5.1.0
+
+# Core Dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+typing-extensions>=4.8.0
